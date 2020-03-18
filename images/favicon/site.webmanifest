@@ -1,0 +1,19 @@
+{
+    "name": "Lens Web",
+    "short_name": "Lens Web",
+    "icons": [
+        {
+            "src": "https://k8slens.dev/images/favicon/android-chrome-192x192.png?v=eEv4bpe534",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://k8slens.dev/images/favicon/android-chrome-512x512.png?v=eEv4bpe534",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}

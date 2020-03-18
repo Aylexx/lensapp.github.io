@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Lens | The Kubernetes IDE</title>
+
+  <meta name="description" content="Lens IDE for Kubernetes. The only system you’ll ever need to take control of your Kubernetes clusters. It's open source and free. Download it today!">
+  <meta name="author" content="Lakend Labs">
+  <meta name="keywords" content="kubernetes, ui, open source, cloud native, docker, kontena, ide">
+  <meta name="language" content="english">
+
+  <meta property="og:title" content="Lens | The Kubernetes IDE"/>
+  <meta property="og:description" content="Lens IDE for Kubernetes. The only system you’ll ever need to take control of your Kubernetes clusters. It's open source and free. Download it today!" />
+  <meta property="og:image" content="https://k8slens.dev/images/lens-og.png" />
+  <meta property="og:url" content="https://k8slens.dev/" />
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/fontawesome-all.css" rel="stylesheet">
+  <link href="css/swiper.css" rel="stylesheet">
+  <link href="css/magnific-popup.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Favicon: http://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png?v=eEv4bpe534">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png?v=eEv4bpe534">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png?v=eEv4bpe534">
+  <link rel="manifest" href="images/favicon/site.webmanifest?v=eEv4bpe534">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg?v=eEv4bpe534" color="#3d90ce">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico?v=eEv4bpe534">
+  <meta name="msapplication-TileColor" content="#d1d2d3">
+  <meta name="msapplication-config" content="images/favicon/browserconfig.xml?v=eEv4bpe534">
+  <meta name="theme-color" content="#000000">
+</head>
+
+<body data-spy="scroll" data-target=".fixed-top">
+
+<!-- Preloader -->
+<div class="spinner-wrapper">
+  <div class="spinner">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+</div>
+<!-- end of preloader -->
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+
+  <a class="navbar-brand" href="index.html"><!-- <img src="images/lens-logo.png" alt="alternative"> -->LENS <span>// THE KUBERNETES IDE</span></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-awesome fas fa-bars"></span>
+    <span class="navbar-toggler-awesome fas fa-times"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link page-scroll" href="#features">FEATURES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link page-scroll" href="#demo">DEMO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/lensapp/lens/releases/latest">DOWNLOAD</a>
+      </li>
+    </ul>
+    <span class="nav-item social-icons">
+      <span class="fa-stack">
+        <a href="https://github.com/lensapp/lens">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fab fa-github fa-stack-1x"></i>
+        </a>
+      </span>
+      <span class="fa-stack">
+        <a href="https://join.slack.com/t/kontenacommunity/shared_invite/enQtOTc5NjAyNjYyOTk4LWU1NDQ0ZGFkOWJkNTRhYTc2YjVmZDdkM2FkNGM5MjhiYTRhMDU2NDQ1MzIyMDA4ZGZlNmExOTc0N2JmY2M3ZGI">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fab fa-slack fa-stack-1x"></i>
+        </a>
+      </span>
+      <span class="fa-stack">
+        <a href="https://twitter.com/k8slens">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fab fa-twitter fa-stack-1x"></i>
+        </a>
+      </span>
+    </span>
+  </div>
+</nav>
+<!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>THE KUBERNETES IDE <br>FOR <span id="js-rotating">DEVELOPMENT, OPERATIONS, MONITORING, DEBUGGING, DEVOPS</span></h1>
+                            <p class="p-large">Lens is the only IDE you’ll ever need to take control of your Kubernetes clusters. It's open source and free. Download it today!</p>
+                            <a class="btn-solid-lg" href="https://github.com/lensapp/lens/releases/latest"><i class="fas fa-download"></i> Download</a>
+                            <i class="supported-os-icon fab fa-apple"></i>
+                            <i class="supported-os-icon fab fa-windows"></i>
+                            <i class="supported-os-icon fab fa-linux"></i>
+                        </div>
+                    </div> <!-- end of col -->
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                        <div class="image-container">
+                            <img class="img-fluid" src="images/header-lens.png" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+    <!-- Statistics -->
+    <div class="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Counter -->
+                    <div id="counter">
+                      <div class="cell">
+                          <div id="happy-users-count" class="counter-value number-count" data-count="4465">1</div>
+                          <p class="counter-info">Happy Users</p>
+                      </div>
+                      <div class="cell">
+                          <div id="stargazers-count" class="counter-value number-count" data-count="893">1</div>
+                          <p class="counter-info"><a href="https://github.com/lensapp/lens">Stargazers</a></p>
+                      </div>
+                      <div class="cell">
+                          <div id="forks-count" class="counter-value number-count" data-count="62">1</div>
+                          <p class="counter-info"><a href="https://github.com/lensapp/lens">Forks</a></p>
+                      </div>
+                    </div>
+                    <!-- end of counter -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of counter -->
+    <!-- end of statistics -->
+
+    <div id="features" class="basic-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="images/better-kubernetes.svg" alt="alternative">
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h3>The Kubernetes IDE</h3>
+                        <p>Lens is the most powerful IDE for people who need to deal with Kubernetes clusters on a daily basis. It is a standalone application for MacOS, Windows and Linux operating systems. Ensure your clusters are properly setup and configured. Enjoy increased visibility, real time statistics, log streams and hands-on troubleshooting capabilities. With Lens, you can work with your clusters more easily and fast, radically improving productivity and the speed of business.</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+
+    <div class="basic-3">
+        <div class="third">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h3>Multi Cluster Management</h3>
+                            <p>Access and work with your clusters with a confidence from a single unified IDE. Lens works with any number of Kubernetes clusters. Access to the clusters are made using the built-in kubectl to enforce the Kubernetes RBAC. The clusters may be local (e.g. minikube) or external (e.g. EKS, AKS, GKE, Pharos, UCP, Rancher or OpenShift). Clusters may be added simply by importing the kubeconfig with cluster details. Once added, it is easy to switch between clusters to work on. With Lens, you'll get a single unified IDE for all your clusters!</p>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="images/multi-cluster-management.svg" alt="alternative">
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of second -->
+    </div> <!-- end of basic-3 -->
+
+    <div class="basic-3">
+        <div class="fourth">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="images/workspaces.svg" alt="alternative">
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h3>Multiple Workspaces</h3>
+                            <p>Organize clusters into logical groups. Workspaces are used to organize number of clusters into logical groups. They are very useful for DevOps and SREs who need to deal with multiple (even hundreds of) clusters. A single workspace contains a list of clusters and their full configuration. It is easy to create and switch between workspaces.</p>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of second -->
+    </div> <!-- end of basic-3 -->
+
+    <div class="basic-3">
+        <div class="fifth">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                      <div class="text-container">
+                        <h3>Built-In Prometheus Stats</h3>
+                        <p>See all relevant graphs and resource utilization charts integrated as part of the dashboard. Lens comes with built-in and multi-tenant Prometheus setup that will respect RBAC for each user. Users will see visualization for all the namespaces and resources they have access. All graphs and resource utilization charts are designed to be very accessible and available in right context no matter which part of the dashboard you are operating.</p>
+                      </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                      <img class="img-fluid" src="images/built-in-prometheus-stats.svg" alt="alternative">
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of second -->
+    </div> <!-- end of basic-3 -->
+
+    <div class="basic-3">
+        <div class="sixth">
+            <div class="container">
+                <div class="row">
+                  <div class="col-lg-6">
+                      <img class="img-fluid" src="images/context-aware-terminal.svg" alt="alternative">
+                  </div> <!-- end of col -->
+                  <div class="col-lg-6">
+                      <div class="text-container">
+                          <h3>Context Aware Terminal</h3>
+                          <p>The built-in terminal comes with kubectl that is always API compatible with your cluster and in right context. Lens built-in terminal will ensure the version of Kubernetes cluster API is compatible with the version of kubectl. It will download and assign the correct version on fly so you don't have to. It will also provide peace of mind by switching the kubectl context to match the cluster you are currently working with.</p>
+                      </div> <!-- end of text-container -->
+                  </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of second -->
+    </div> <!-- end of basic-3 -->
+
+    <!-- Video -->
+    <div id="demo" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>DEMO</h2>
+                    <div class="p-heading p-large">Lights, Camera, Action! The live demo of Lens features.</div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Video Preview -->
+                    <div class="image-container">
+                        <div class="video-wrapper">
+                            <a class="popup-youtube" href="https://youtu.be/04v2ODsmtIs" data-effect="fadeIn">
+                                <img class="img-fluid" src="images/header-lens.png" alt="alternative">
+                                <span class="video-play-button">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div> <!-- end of video-wrapper -->
+                    </div> <!-- end of image-container -->
+                    <!-- end of video preview -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of video -->
+
+    <div id="download" class="basic-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="text-container">
+                      <h2>Download <span class="blue">Lens</span></h2>
+                      <p class="p-large">Lens is the only IDE you’ll ever need to take control of your Kubernetes clusters. It is a standalone application for MacOS, Windows and Linux operating systems. Lens is open source and free. Download it today!</p>
+                      <a class="btn-solid-lg" href="https://github.com/lensapp/lens/releases/latest"><i class="fas fa-download"></i> Download</a>
+                      <i class="supported-os-icon fab fa-apple"></i>
+                      <i class="supported-os-icon fab fa-windows"></i>
+                      <i class="supported-os-icon fab fa-linux"></i>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/header-lens.png" alt="alternative">
+                    </div> <!-- end of img-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col">
+                        <h4>About Lens</h4>
+                        <p>Lens was originally developed by Kontena, Inc. Today, all IPR is owned by Lakend Labs - a collective of cloud native technologists and geeks committed in preserving and making Kontena developed software available for all.</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>Resources</h4>
+                        <ul class="list-unstyled li-space-lg">
+                          <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><a href="https://github.com/lensapp/lens#contributing" class="primary">How to Contribute?</a></div>
+                          </li>
+                          <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><a href="https://github.com/lensapp/lens" class="primary">Source Code</a></div>
+                          </li>
+                          <li class="media">
+                              <i class="fas fa-square"></i>
+                              <div class="media-body"><a href="https://join.slack.com/t/kontenacommunity/shared_invite/enQtOTc5NjAyNjYyOTk4LWU1NDQ0ZGFkOWJkNTRhYTc2YjVmZDdkM2FkNGM5MjhiYTRhMDU2NDQ1MzIyMDA4ZGZlNmExOTc0N2JmY2M3ZGI" class="primary">Community Slack</a></div>
+                          </li>
+                          <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><a href="https://lakendlabs.com/licenses/lens-eula.md" class="primary">EULA</a></div>
+                          </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Community</h4>
+                        <span class="fa-stack">
+                            <a href="https://github.com/lensapp/lens">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://join.slack.com/t/kontenacommunity/shared_invite/enQtOTc5NjAyNjYyOTk4LWU1NDQ0ZGFkOWJkNTRhYTc2YjVmZDdkM2FkNGM5MjhiYTRhMDU2NDQ1MzIyMDA4ZGZlNmExOTc0N2JmY2M3ZGI">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-slack fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://twitter.com/k8slens">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2020 <a href="https://lakendlabs.com">Lakend Labs</a> - All rights reserved.</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square150x150logo src="https://k8slens.dev/images/favicon/mstile-150x150.png?v=eEv4bpe534"/>
+            <TileColor>#d1d2d3</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>
