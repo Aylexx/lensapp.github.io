@@ -196,6 +196,16 @@
 		mainClass: 'my-mfp-slide-bottom'
 	});
 
+  function formatStats(n){
+    if(!n) return 0;
+
+    var number = n/1000;
+    if(number > 10){
+      return number.toFixed(1)+"k";
+    } else {
+      return n;
+    }
+  }
 
   function updateCounters(){
     $('.counter-value').each(function() {
@@ -210,11 +220,10 @@
         duration: 2000,
         easing: 'swing',
         step: function() {
-        $this.text(Math.floor(this.countNum));
+        $this.text(formatStats(Math.floor(this.countNum)));
         },
         complete: function() {
-        $this.text(this.countNum);
-        //alert('finished');
+        $this.text(formatStats(this.countNum));
         }
       });
     });
@@ -380,12 +389,36 @@
     url: 'https://api.github.com/repos/lensapp/lens',
     success: function( data ){
       if(data.stargazers_count && data.forks){
-        $( "#happy-users-count" ).attr( 'data-count', data.stargazers_count * 5 );
+        $( "#happy-users-count" ).attr( 'data-count', Math.round(data.stargazers_count * 5.13) );
         $( "#stargazers-count" ).attr( 'data-count', data.stargazers_count );
         $( "#forks-count" ).attr( 'data-count', data.forks );
         updateCounters();
       }
     },
   });
+
+  /*
+  function getDownloadsPerRelease(){
+    var assets = {};
+    $.ajax({
+      url: 'https://api.github.com/repos/lensapp/lens/releases',
+      success: function( data ){
+        data.forEach(release => {
+          if(!release.draft) {
+            if(release.assets){
+              release.assets.forEach( asset => {
+                if(!assets[asset.name]){
+                  assets[asset.name] = asset.download_count;
+                } else {
+                  assets[asset.name] = assets[asset.name] + asset.download_count;
+                }
+              });
+            }
+          }
+        });
+      },
+    });
+  }
+  */
 
 })(jQuery);
